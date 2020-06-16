@@ -9,18 +9,57 @@
 <body>
     <header>
         <div id="banner">
-            <h1>
-                <img src="image/logo-helloPizza.png" alt="Hello Pizza">
-            </h1>
+            <img src="image/logo-original-resta.png" alt="Hello Pizza">
         </div>
 
-        <nav>
+        <nav id="navegação">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sabores</a></li>
                 <li><a href="#">Contato</a></li>
+                <button id="button" onclick="onOff()">Contacte-nos</button>
             </ul>
         </nav>
     </header>
+    
+    
+    
+    
+    <!-- Modal -->
+                <div id="modal" class="hide">
+                <div class="content">
+                    <h1>Nos ajude a colocar novos conteúdos na página</h1>
+
+                    <form action="">
+                        <div class="input-wrapper">
+                            <label for="title">Título*</label>
+                            <input required type="text" name="title">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="category">Categoria*</label>
+                            <input required type="text" name="category">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="description">Descrição*</label>
+                            <textarea required name="description" cols="30" rows="10"></textarea>
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="link">Link do conteúdo (Caso já exista o conteúdo em algum lugar da web)</label>
+                            <input type="url" name="image">
+                            <span class="error"></span>
+                        </div>
+
+                        <a href="#" onclick="onOff()">Voltar</a>
+                        <button type="submit" id="modal-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <script src="scripts.js"></script>
 </body>
 </html>
