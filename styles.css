@@ -1,28 +1,82 @@
 body {
-    background-image: url(image/wood.jpg);
-	font-family: "Helvetica Neue", sans-serif;
+    background-image: url(image/Café-02.jpg);
+	font-family: "Ubuntu", sans-serif;
+    margin: 0;
 }
 
 header {
-    width: 700px;
-    margin-top: 0;
+    width: 1500px;
+    height: 100px;
+    margin: 0 auto;
 	background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
 }
 
-
-nav#navegação {
-	display: inline-block;
-	width: 100px;
+header div#logo-image {
+    position: relative;
+    left: 150px;
+    top: 15px;
 }
 
+nav ul {
+    position: relative;
+    left: 380px;
+    bottom: 90px;
+	width: 100%;
+    list-style: none;
+}
 
-/*nav ul li a {
+nav ul li {
+    display: inline;
+}
+
+nav ul button#button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+nav ul li a {
 	color:black;
-	font-size: 12px;
+	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
-}*/
+    padding: 2px 70px;
+    display: inline-block; 
+}
+
+section div#corpo-inicial div img {
+    width: 1500px;
+    height: 700px;
+}
+
+section div#corpo-inicial div#image {
+    position: relative;
+    margin: 0 auto;
+    left: 44px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+div#info {
+    position: relative;
+    bottom: 450px;
+    left: 100px;
+}
+
+div#info h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+div#info p {
+    font-size: 30px;
+    font-weight: bold;
+}
 
 /* Modal */
 
