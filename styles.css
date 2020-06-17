@@ -1,7 +1,7 @@
 body {
-    background-image: url(image/Café-02.jpg);
+    background-image: url(image/wood.jpg);
 	font-family: "Ubuntu", sans-serif;
-    margin: 0;
+    margin: 0 auto;
 }
 
 header {
@@ -9,7 +9,6 @@ header {
     height: 100px;
     margin: 0 auto;
 	background-color: rgba(255, 255, 255, 1);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
 }
 
 header div#logo-image {
@@ -49,7 +48,7 @@ nav ul li a {
     display: inline-block; 
 }
 
-section div#corpo-inicial div img {
+section div#corpo-inicial div img#welcome {
     width: 1500px;
     height: 700px;
 }
@@ -58,12 +57,11 @@ section div#corpo-inicial div#image {
     position: relative;
     margin: 0 auto;
     left: 44px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
 }
 
 div#info {
     position: relative;
-    bottom: 450px;
+    bottom: 400px;
     left: 100px;
 }
 
@@ -71,11 +69,54 @@ div#info h1 {
     font-family: 'Amatic SC', cursive;
     font-size: 80px;
     font-weight: bold;
+    margin: 0;
 }
 
 div#info p {
     font-size: 30px;
     font-weight: bold;
+}
+
+section div#corpo-inicial div img#recipe {
+    width: 1500px;
+    height: 700px;
+}
+
+section div#corpo-inicial div#image-2 {
+    position: relative;
+    margin: 0 auto;
+    left: 44px;
+    bottom: 200px;
+}
+
+div#info-2 {
+    position: relative;
+    bottom: 450px;
+    left: 700px;
+}
+
+div#info-2 h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+}
+
+div#info-2 p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer#rodape {
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 0px; 
+    left: 2px;
+    bottom: 400px;
+    background-color: green;
+    width: 1500px;
+    text-align: center;
+    color: #FFF;
 }
 
 /* Modal */

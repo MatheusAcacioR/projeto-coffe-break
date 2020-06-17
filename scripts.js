@@ -10,6 +10,14 @@ function onOff(){
             .toggle("addScroll")
 }
 
+// Colocar ano vigente no rodapé da pagina
+
+var date = new Date()
+year = date.getFullYear()
+
+footer = document.getElementById("footer")
+footer.innerHTML = `Copyright &copy; Coffe Break ${year} - by Coffe Break`
+
 // Validação da form
 
 const fields = document.querySelectorAll("[required]")
