@@ -1,6 +1,10 @@
-body {
-	font-family: "Ubuntu", sans-serif;
+body { 
+    font-family: "Ubuntu", sans-serif;
     margin: 0 auto;
+   background-image: url("image/Café-01.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
 }
 
 img#fundo {
@@ -16,19 +20,19 @@ div#cabecalho {
 	background-color: rgba(255, 255, 255, 1);
 }
 
-div div#logo-image {
+/*div div#logo-image {
     position: relative;
     left: 150px;
     top: 15px;
-}
+}*/
 
-nav ul {
+/*nav ul {
     position: relative;
     left: 380px;
     bottom: 90px;
 	width: 100%;
     list-style: none;
-}
+}*/
 
 nav ul li {
     display: inline;
@@ -53,26 +57,22 @@ nav ul li a {
     display: inline-block; 
 }
 
-section {
-    background-color: white;
-}
-
 section div#corpo-inicial div img#welcome {
     width: 1500px;
     height: 700px;
 }
 
-section div#corpo-inicial div#image {
+/*section div#corpo-inicial div#image {
     position: relative;
     margin: 0 auto;
     left: 44px;
-}
+}*/
 
-div#info {
+/*div#info {
     position: relative;
     bottom: 400px;
     left: 100px;
-}
+}*/
 
 div#info h1 {
     font-family: 'Amatic SC', cursive;
@@ -91,7 +91,7 @@ section div#corpo-inicial div img#recipe {
     height: 700px;
 }
 
-section div#corpo-inicial div#image-2 {
+/*section div#corpo-inicial div#image-2 {
     position: relative;
     margin: 0 auto;
     left: 44px;
@@ -102,7 +102,7 @@ div#info-2 {
     position: relative;
     bottom: 450px;
     left: 700px;
-}
+}*/
 
 div#info-2 h1 {
     font-family: 'Amatic SC', cursive;
