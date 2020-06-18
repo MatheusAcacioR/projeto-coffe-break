@@ -1,17 +1,22 @@
 body {
-    background-image: url(image/wood.jpg);
 	font-family: "Ubuntu", sans-serif;
     margin: 0 auto;
 }
 
-header {
+img#fundo {
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+}
+
+div#cabecalho {
     width: 1500px;
     height: 100px;
     margin: 0 auto;
 	background-color: rgba(255, 255, 255, 1);
 }
 
-header div#logo-image {
+div div#logo-image {
     position: relative;
     left: 150px;
     top: 15px;
@@ -46,6 +51,10 @@ nav ul li a {
 	text-transform: uppercase;
     padding: 2px 70px;
     display: inline-block; 
+}
+
+section {
+    background-color: white;
 }
 
 section div#corpo-inicial div img#welcome {
