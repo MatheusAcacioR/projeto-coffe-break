@@ -15,22 +15,34 @@ img#fundo {
 
 div#cabecalho {
     width: 1500px;
-    height: 100px;
+    height: 80px;
     margin: 0 auto;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: rgba(221, 217, 206, 1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
 }
 
-div div#logo-image {
+/*div div#logo-image {
     position: relative;
-    left: 150px;
-    top: 15px;
+    left: 0px;
+    top: 20px;
+    width: 100px;
+}*/
+
+img#logo-cafe {
+    position: relative;
+    left: 100px;
+    top: 20px;
+    width: 240px;
+
 }
 
 nav ul {
     position: relative;
     left: 380px;
-    bottom: 90px;
-	width: 100%;
+    bottom: 55px;
+	width: 1000px;
+    margin: 0;
     list-style: none;
 }
 
@@ -45,6 +57,7 @@ nav ul button#button {
     font-weight: 700;
     text-transform: uppercase;
     padding: 40px;
+    outline: none;
 }
 
 nav ul li a {
@@ -57,81 +70,214 @@ nav ul li a {
     display: inline-block; 
 }
 
-section div#corpo-inicial div img#welcome {
+section {
+    background-color: #ddd9ce;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
     width: 1500px;
-    height: 700px;
-}
-
-section div#corpo-inicial div#image {
-    position: relative;
     margin: 0 auto;
-    left: 44px;
-}
-
-div#info {
     position: relative;
-    bottom: 400px;
-    left: 100px;
+    top: 10px;
 }
 
-div#info h1 {
+section img {
+    margin: 10px 0px 0px 70px;
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+div#welcome {
+    position: relative;
+    bottom: 370px;
+    left: 90px;
+}
+
+section div#welcome h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: bold;
-    margin: 0;
+    margin: 0 auto;
 }
 
-div#info p {
+section div#welcome p {
+    margin-top: 0px;
     font-size: 30px;
     font-weight: bold;
 }
 
-section div#corpo-inicial div img#recipe {
-    width: 1500px;
-    height: 700px;
-}
-
-section div#corpo-inicial div#image-2 {
+div#recipe {
     position: relative;
-    margin: 0 auto;
-    left: 44px;
-    bottom: 200px;
+    bottom: 370px;
+    left: 190px;
+    color: #c4c4c4
 }
 
-div#info-2 {
-    position: relative;
-    bottom: 450px;
-    left: 700px;
-}
-
-div#info-2 h1 {
+section div#recipe h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: bold;
-    margin: 0;
+    margin: 0px 80px;
 }
 
-div#info-2 p {
+section div#recipe p {
+    margin-top: 0px;
     font-size: 30px;
     font-weight: bold;
 }
+
+div#more {
+    position: relative;
+    left: 1150px;
+    bottom: 1480px;
+    right: 0px;
+    width: 300px;
+}
+
+section div#more h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Inicio barra lateral*/
+
+#slider-creme img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -330px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-creme p#creme {
+    position: absolute;
+    right: -30px;
+    bottom: -665px;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-creme img.selected-creme {
+    opacity: 1;
+}
+
+#slider-mousse img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -680px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-mousse p#mousse {
+    position: absolute;
+    right: -30px;
+    bottom: -1010px;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-mousse img.selected-mousse {
+    opacity: 1;
+}
+
+#slider-brownie img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -1025px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-brownie p#brownie {
+    position: absolute;
+    right: -30px;
+    bottom: -1355px;
+    width: 300px;
+    height: 300px;
+    left: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-brownie img.selected-brownie {
+    opacity: 1;
+}
+
+/*#slider-bolo img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -1370px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-bolo p#bolo {
+    position: absolute;
+    right: -30px;
+    bottom: -1700px;
+    width: 300px;
+    height: 300px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-bolo img.selected-bolo {
+    opacity: 1;
+}*/
+
+/* Fim barra lateral*/
 
 footer#rodape {
     position: relative;
-    margin: 0 auto;
-    padding: 30px 0px; 
-    left: 2px;
-    bottom: 400px;
-    background-color: green;
+    margin: 20px auto;
+    padding: 30px 0px;
+    background-color: #492905;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
     width: 1500px;
-    text-align: center;
+    height: 10px;
     color: #FFF;
+}
+
+footer#rodape p {
+    position: relative;
+    bottom: 18px;
+    left: 570px;
 }
 
 /* Modal */
 
 #modal {
-    background: #11108c;
+    background-image: url("image/Café-03.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -149,7 +295,7 @@ footer#rodape {
 #modal .content {
     margin-top: 5%;
     /*margin-top: 128px;*/
-    color: white;
+    color: black;
 }
 
 #modal .content h1 {
@@ -178,7 +324,7 @@ form input {
     padding: 12px;
     box-sizing: border-box; /* Quando colocamos o box-sizing: border-box; ele faz com que os 12px dos padding estejam dentro dos 100%                          do width, fazendo com que não ultrapasse a borda e estrapole um item em cima do outro*/
     border-radius: 6px;
-    border: 1px solid #ff0000;
+    border: 1px solid rgba(0,0,0,0.5);
     outline: none;
     font-size: 16px;
 }
@@ -192,7 +338,7 @@ form label {
 form a {
     width: 150px;
     height: 40px;
-    background-color: rgba(255,255,255, 0.1);
+    background-color: rgba(0,0,0, 1);
     color: white;
     display: flex;
     align-items: center;
@@ -206,13 +352,13 @@ form a {
 }
 
 form a:hover {
-    background-color: #c4c4c4;
-    color: #ff0000;
+    background-color: #492905;
+    color: white;
     text-decoration: none;
 }
 
 form button {
-    background: rgba(255,255,255, 0.1);
+    background: rgba(0,0,0,1);
     color: white;
     font-size: 14px;
     font-weight: bold;
@@ -228,8 +374,8 @@ form button {
 }
 
 form button:hover {
-    background-color: #c4c4c4;
-    color: #ff0000;
+    background-color: #492905;
+    color: white;
     text-decoration: none;
 }
 

@@ -3,45 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Novo</title>
+    <title>Coffe Break</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="cabecalho">
         <div id="logo-image">
-            <img id="logo-cafe" src="image/logo-1.png" alt="logo café">
+           <a href="index.html"><img id="logo-cafe" src="image/logo-nova.png" alt="logo café"></a>
         </div>
         <nav id="navegação">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Alimentos</a></li>
-                <li><a href="#">Receitas</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/cafe.html">História</a></li>
+                <li><a href="html/receitas.html">Receitas</a></li>
                 <button id="button" onclick="onOff()">Contacte-nos</button>
             </ul>
         </nav>
     </div>
     <section id="corpo">
-        <div id="corpo-inicial">
-            <div id="image">
-               <!-- <img src="image/Café-01.jpg" alt="" id="welcome">-->
+        <img src="image/Café-02.jpg" alt="">
+        <div id="welcome">
+            <h1>Bem vindo ao Coffe Break</h1>
+            <p>Encontre informações sobre o café.</p>
+        </div>
+        <img src="image/Café-04.jpg" alt="">
+        <div id="recipe">
+            <h1>Expanda suas possibilidades</h1>
+            <p>Descubra as melhores receitas com café.</p>
+        </div>
+
+        <div id="more">
+            <h1>Veja novas receitas</h1>
+            <a href="html/receitas.html"><div id="slider-creme">
+                <img class="selected-creme" src="image/creme-1.jpeg" alt="Image1">
+                <img src="image/creme-2.jpg" alt="Image2">
+                <img src="image/creme-3.jpg" alt="Image3">
+                <img src="image/creme-4.jpg" alt="Image4">
+                <p id="creme">Creme de Café</p></a>
             </div>
-            <!--<div id="info">
-                <h1>Bem-vindo a Coffe Break</h1>
-                <p>Encontre as melhores informações sobre café em nosso site.</p>
-            </div>-->
-            <div id="image-2">
-               <!-- <img src="image/cafe-conteudo.jpeg" alt="" id="recipe">-->
+
+            <a href="html/receitas.html"><div id="slider-mousse">
+                <img class="selected-mousse" src="image/mousse-1.jpg" alt="Image1">
+                <img src="image/mousse-2.jpg" alt="Image2">
+                <img src="image/mousse-3.jpg" alt="Image3">
+                <img src="image/mousse-4.jpg" alt="Image4">
+                <p id="mousse">Mousse de Café</p></a>
             </div>
-            <div id="info-2">
-                <h1>Expanda suas possibilidades</h1>
-                <p>Descubra as melhores receitas com café. </p>
+
+            <a href="html/receitas.html"><div id="slider-brownie">
+                <img class="selected-brownie" src="image/brownie-1.jpg" alt="Image1">
+                <img src="image/brownie-2.jpg" alt="Image2">
+                <img src="image/brownie-3.jpg" alt="Image3">
+                <img src="image/brownie-4.jpg" alt="Image4">
+                <p id="brownie">Brownie de café</p></a>
             </div>
         </div>
     </section>
-    <!--<footer id="rodape">
+    <footer id="rodape">
         <p id="footer"></p>
-    </footer>-->
+    </footer>
     <!-- Modal -->
                 <div id="modal" class="hide">
                 <div class="content">

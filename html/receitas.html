@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/receitas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>Receitas</title>
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+        <div id="logo-image">
+            <a href="../index.html"><img id="logo-cafe" src="../image/logo-nova.png" alt="logo café"></a>
+        </div>
+        <nav id="navegação">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="cafe.html">História</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <button id="button" onclick="onOff()">Contacte-nos</button>
+            </ul>
+        </nav>
+    </div>
+    <section id="corpo">
+        <h1>Receitas com Café</h1>
+        <hr >
+        <h3>Creme de Café</h3>
+        <h4>Ingredientes: </h4>
+        <ul>
+        <li>50 g de café solúvel</li>
+        <li>100 g de açúcar (pode utilizar o pacotinho do café como medidor)</li>
+        <li>200 ml de água quente</li>
+        </ul>
+        <h4>Modo de Preparo: </h4>
+        <ol>
+        <li>Colocar na batedeira todos os ingredientes e bater por 5 a 10 minutos até formar um creme pastoso.</li>
+        <li>Para beber é só utilizar uma ou duas colheres do creme em uma xícara e acrescentar leite quente. Fica uma delícia e muito cremoso.</li>
+        <li>Outra opção é acrescentar uma pitada de canela e uma colher de chocolate em pó. Fica muito parecido com um cappuccino.</li>
+        <li>Se preferir, pode beber gelado!</li>
+        </ol>
+
+        <hr>
+        <h3>Mousse de Café</h3>
+        <h4>Ingredientes: </h4>
+        <ul>
+        <li>1 envelope de gelatina em pó sem sabor</li>
+        <li>3 ovos</li>
+        <li>½ xícara (chá) de leite</li>
+        <li>2 colheres (sopa) de nescafé</li>
+        <li>1 lata de leite condensado</li>
+        <li>200 g de chantilly</li>
+        <li>Raspas de chocolate para decorar</li>
+        </ul>
+        <h4>Modo de Preparo: </h4>
+        <ol>
+        <li>Dissolva a gelatina em meia xícara (chá) de água fria e reserve.</li>
+        <li>Desmanche as gemas no leite e junte a gelatina.</li>
+        <li>Acrescente o nescafé dissolvido em uma xícara (chá) de água e misture bem.</li>
+        <li>Aqueça em banho-maria até que a gelatina se dissolva por completo.</li>
+        <li>Retire do fogo, junte o leite condensado e, por último, as claras batidas em neve.</li>
+        <li>Misture delicadamente.</li>
+        <li>Despeje a mistura em taças e leve à geladeira.</li>
+        <li>Sirva com chantilly e decore com raspas de chocolate.</li>
+        </ol>
+
+        <hr>
+        <h3>Brownie de Café</h3> 
+        <h4>Ingredientes: </h4>
+        <ul>
+        <li>6 colheres de sopa de manteiga</li>
+        <li>3/4 xícara de chá de cacau em pó</li>
+        <li>1/2 xícara de chá de café solúvel</li>
+        <li>1 1/4 xícara de chá de farinha de trigo</li>
+        <li>2 xícaras de chá açúcar</li>
+        <li>4 ovos</li>
+        <li>Grãos de café</li>
+        </ul>
+
+        <h4>Modo de Preparo: </h4>
+        <ol>
+        <li>Primeiro, bata os ovos e o açúcar e, depois, acrescente o resto dos ingredientes e continue a bater até a massa ficar uniforme.</li>
+        <li>Despeje a mistura em uma assadeira untada e, por cima, jogue os grãos de café.</li>
+        <li>Leve ao forno médio por 40 minutos.</li>
+        <li>Sirva quando esfriar.</li>
+        </ol>
+        <hr>
+
+
+    </section>
+    <footer id="rodape">
+        <p id="footer"></p>
+    </footer>
+    <!-- Modal -->
+                <div id="modal" class="hide">
+                <div class="content">
+                    <h1>Nos ajude a colocar novos conteúdos na página</h1>
+
+                    <form action="">
+                        <div class="input-wrapper">
+                            <label for="title">Título*</label>
+                            <input required type="text" name="title">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="category">Categoria*</label>
+                            <input required type="text" name="category">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="description">Descrição*</label>
+                            <textarea required name="description" cols="30" rows="10"></textarea>
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="link">Link do conteúdo (Caso já exista o conteúdo em algum lugar da web)</label>
+                            <input type="url" name="image">
+                            <span class="error"></span>
+                        </div>
+
+                        <a href="#" onclick="onOff()">Voltar</a>
+                        <button type="submit" id="modal-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <script src="../scripts.js"></script>
+    </header>
+</body>
+</html>
